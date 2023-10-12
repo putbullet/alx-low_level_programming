@@ -1,21 +1,13 @@
 #include <stdio.h>
 
-#define FILENAME __FILE__
-
-int _putchar(char c) {
-    return putchar(c);
-}
-
-int main() {
-    const char* filename = FILENAME;
-
-    while (*filename != '\0') {
-        _putchar(*filename);
-        filename++;
-    }
-
-    _putchar('\n');
-
-    return 0;
+/**
+ * main - prints the name of the file
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
 }
 
